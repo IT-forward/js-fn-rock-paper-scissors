@@ -1,3 +1,7 @@
+## Before you start
+
+Before you start coding, create another git branch called your name. After you finish your code, commit and push it to the master. Then you should open the repository in the link and create pull request.
+
 # Rock, Paper, or Scissors
 
 Rock paper scissors is a classic two player game. Each player chooses either rock, paper, or scissors. The items are compared, and whichever player chooses the more powerful item wins.
@@ -54,4 +58,4 @@ Then inside the folder open `Git Bash` and type `yarn`. Wait until it finishes.
 
 Now you should be able to run test scripts by running `yarn test` in Git Bash. If you haven't started coding, it should show you all red failures. After you successfully finish the project you should see all green test passes :).
 
-You have another way of running tests: `yarn watch`. It will listen to your code changes and run tests every time you modify it.
+You have another way of running tests: `yarn watch`. It will listen to your code changes and run tests every time you modify it. If you want to exit this process just type `q`. For other info, read the information on the screen.
