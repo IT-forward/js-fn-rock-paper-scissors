@@ -23,7 +23,7 @@ Our code will break the game into four parts:
   - return input if it is valid input that is one of *rock, paper, scissors*.
   - if input is invalid, it should not return anything but log some error message of your choice.
   
-2. Now we need to have the computer make a choice. Inside `getComputerChoice()` utilize Math.random() and Math.floor() to get a whole number between 0 and 2. Then, depending on the number, return either 'rock', 'paper', or 'scissors'.
+2. Now we need to have the computer make a choice. Inside `getComputerChoice()` utilize `Math.random()` and `Math.floor()` to get a whole number between 0 and 2. Then, depending on the number, return either 'rock', 'paper', or 'scissors'.
 
 3. Now it’s time to determine a winner. `determineWinner()` will compare the two choices played and then return if the human player won, lost, or tied.
   - Let’s deal with the tie condition first. Within the `determineWinner()` function, write an if statement that checks if the userChoice parameter equals the computerChoice parameter. If so, `return` a string that the game was a *'tie'*.
