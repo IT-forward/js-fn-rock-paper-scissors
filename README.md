@@ -1,12 +1,12 @@
 ## Before you start
 
-Before you start coding, 
+Before you start coding:
 - create another git branch called your name
 - finish your code
 - commit
 - push it to GitHub
 - open the repository and create pull request
-- Request my (@bahriddin) code review.
+- request my (@bahriddin) code review.
 
 # Rock, Paper, or Scissors
 
