@@ -1,8 +1,9 @@
 ## Before you start
 
 Before you start coding:
+
 - create another git branch called your name
-- finish your code
+- finish your code in `index.js`. You must not update any other file.
 - commit
 - push it to GitHub
 - open the repository and create pull request

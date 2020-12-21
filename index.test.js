@@ -7,8 +7,8 @@ import playGame, {
 describe("getUserChoice()", () => {
   it("lower-cases valid inputs", () => {
     expect(getUserChoice("Rock")).toBe("rock");
-    expect(getUserChoice("PAPER")).toBe("paper");
-    expect(getUserChoice("sCisSoRs")).toBe("scissors");
+    expect(getUserChoice("PAPER ")).toBe("paper");
+    expect(getUserChoice(" sCisSoRs   ")).toBe("scissors");
   });
 
   it("shows error and returns nothing for invalid inputs", () => {
