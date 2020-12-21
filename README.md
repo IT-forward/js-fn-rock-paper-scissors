@@ -58,7 +58,7 @@ Our code will break the game into four parts:
 In order to run test cases you should install
 
 1. [Node.JS](https://nodejs.org/en/). Pick _Recommended For Most Users_ version.
-2. [Yarn](https://yarnpkg.com/getting-started/install). Just follow instructions.
+2. [Yarn](https://yarnpkg.com/getting-started/install). Just follow instructions. Follow global install.
 
 Then inside the folder open `Git Bash` and type `yarn`. Wait until it finishes.
 
