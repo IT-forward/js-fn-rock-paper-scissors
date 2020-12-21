@@ -1,6 +1,12 @@
 ## Before you start
 
-Before you start coding, create another git branch called your name. After you finish your code, commit and push it to the master. Then you should open the repository in the link and create pull request.
+Before you start coding, 
+- create another git branch called your name
+- finish your code
+- commit
+- push it to GitHub
+- open the repository and create pull request
+- Request my (@bahriddin) code review.
 
 # Rock, Paper, or Scissors
 
