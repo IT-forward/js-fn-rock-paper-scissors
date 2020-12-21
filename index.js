@@ -1,5 +1,5 @@
 export const getUserChoice = (userInput) => {
-  // TODO
+  return "rock";
 };
 
 export const getComputerChoice = () => {
