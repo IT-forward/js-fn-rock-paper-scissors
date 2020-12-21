@@ -3,7 +3,7 @@
 Before you start coding:
 
 - create another git branch called your name
-- finish your code in `index.js`. You must not update any other file.
+- finish your code in `index.js`. **Do not update any other file**.
 - commit
 - push it to GitHub
 - open the repository and create pull request
