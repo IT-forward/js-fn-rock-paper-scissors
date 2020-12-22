@@ -48,9 +48,9 @@ export const determineWinner = (userChoice, computerChoice) => {
       } else {
         return 'computer won';
       }
-  } else if(userChoice === 'error'){
-      return 'Error occured'
-  } 
+  } else if(userChoice === 'bomb'){
+      return 'user won';
+  }
 };
 
 const playGame = () => {
