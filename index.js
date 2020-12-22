@@ -1,22 +1,12 @@
 export const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase().trim();
 
-  if (userInput === 'rock'){ 
-    return 'rock';
-  }
-  else {
-    if (userInput === 'paper'){ 
-      return 'paper';
-    }
-    else {
-      if (userInput === 'scissors'){ 
-        return 'scissors';
-      }
-      else {
-        if (userInput === 'bomb') return 'bomb';
-        else console.log(`Please choose one of the words : "rock", "paper", or "scissors"`);
-      }
-    }
+  switch (userInput){
+    case 'rock': return 'rock';
+    case 'paper': return 'paper'; 
+    case 'scissors': return 'scissors';
+    case 'bobm': return 'bomb'; 
+    default: console.log(`Please choose one of the words : "rock", "paper", or "scissors"`); break;
   }
 
 };
