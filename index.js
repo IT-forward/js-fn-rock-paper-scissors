@@ -1,6 +1,5 @@
 export const getUserChoice = (userInput) => {
-  // TODO
-  const input = userInput.trim().toLowerCase();
+  let input = userInput.trim().toLowerCase();
   if (input === 'rock') {
     return input;
   } else if (input === 'scissors') {
@@ -13,18 +12,33 @@ export const getUserChoice = (userInput) => {
 };
 
 export const getComputerChoice = () => {
-  // TODO
   const randomIndex = Math.floor(Math.random() * 3);
   const options = ['rock', 'scissors', 'paper'];
   return options[randomIndex];
 };
 
 export const determineWinner = (userChoice, computerChoice) => {
-  // TODO
+  if (userChoice === computerChoice) {
+    return 'tie';
+  } else if (userChoice === 'rock' && computerChoice === 'scissors') {
+    return 'user won';
+  } else if (userChoice === 'paper' && computerChoice === 'rock') {
+    return 'user won';
+  } else if (userChoice === 'scissors' && computerChoice === 'paper') {
+    return 'user won';
+  } else if (userChoice === 'bomb') {
+    return 'user won';
+  } else {
+    return 'comuter won';
+  }
 };
 
 const playGame = () => {
-  // TODO
+  const userChoice = getUserChoice('Paper');
+  const computerChoice = getUserChoice();
+  determineWinner(userChoice, computerChoice);
+  console.log(determineWinner(userChoice, computerChoice));
 };
 
 export default playGame;
+playGame();
