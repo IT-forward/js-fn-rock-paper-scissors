@@ -4,7 +4,7 @@ export const getUserChoice = (userInput) => {
   if (res === 'rock' || res === 'scissors' || res === 'paper' || res === 'bomb'){
     return res;
   } else {
-    return 'error';
+    console.log('Error occured');
   }
 };
 
