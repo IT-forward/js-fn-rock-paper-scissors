@@ -20,10 +20,10 @@ export const getComputerChoice = () => {
 };
 
 export const determineWinner = (userChoice, computerChoice) => {
-  if (userChoice === 'bomb') return 'user won';
   if (userChoice === computerChoice) return 'tie';
   
   switch (userChoice){
+    case 'bomb': return 'user won'; 
     case 'rock': if (computerChoice === 'paper') return 'computer won'; break;
     case 'paper': if (computerChoice === 'scissors') return 'computer won'; break;
     case 'scissors': if (computerChoice === 'rock') return 'computer won'; break;
@@ -41,3 +41,4 @@ const playGame = () => {
 };
 
 export default playGame;
+playGame();
