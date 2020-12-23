@@ -1,5 +1,5 @@
 export const getUserChoice = (userInput) => {
-  // TODO
+  return userInput.trim().toLowerCase();
 };
 
 export const getComputerChoice = () => {
