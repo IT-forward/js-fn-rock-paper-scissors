@@ -6,6 +6,8 @@ export const getUserChoice = (userInput) => {
     return input;
   } else if (input === 'paper') {
     return input;
+  } else if (input === 'bomb') {
+    return input;
   } else {
     console.log('ERROR MESSAGE');
   }
@@ -29,16 +31,15 @@ export const determineWinner = (userChoice, computerChoice) => {
   } else if (userChoice === 'bomb') {
     return 'user won';
   } else {
-    return 'comuter won';
+    return 'computer won';
   }
 };
 
 const playGame = () => {
-  const userChoice = getUserChoice('Paper');
-  const computerChoice = getUserChoice();
-  determineWinner(userChoice, computerChoice);
+  let userChoice = getUserChoice('paper');
+  let computerChoice = getComputerChoice();
+  console.log(userChoice, computerChoice);
   console.log(determineWinner(userChoice, computerChoice));
 };
-
 export default playGame;
 playGame();
