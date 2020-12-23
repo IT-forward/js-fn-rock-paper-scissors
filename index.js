@@ -1,4 +1,5 @@
 export const getUserChoice = (userInput) => {
+  //TODO
   return userInput.trim().toLowerCase();
 };
 
