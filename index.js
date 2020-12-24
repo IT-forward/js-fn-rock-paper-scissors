@@ -1,5 +1,6 @@
 export const getUserChoice = (userInput) => {
   // TODO
+  return userInput;
 };
 
 export const getComputerChoice = () => {
