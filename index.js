@@ -5,8 +5,8 @@ export const getUserChoice = (userInput) => {
     case 'rock': return 'rock';
     case 'paper': return 'paper'; 
     case 'scissors': return 'scissors';
-    case 'bobm': return 'bomb'; 
-    default: console.log(`Please choose one of the words : "rock", "paper", or "scissors"`); break;
+    case 'bomb': return 'bomb'; 
+    default: console.log(`Please choose one of the words : "rock", "paper", or "scissors"`);
   }
 
 };
@@ -23,7 +23,6 @@ export const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) return 'tie';
   
   switch (userChoice){
-    case 'bomb': return 'user won'; 
     case 'rock': if (computerChoice === 'paper') return 'computer won'; break;
     case 'paper': if (computerChoice === 'scissors') return 'computer won'; break;
     case 'scissors': if (computerChoice === 'rock') return 'computer won'; break;
@@ -40,5 +39,6 @@ const playGame = () => {
   console.log(determineWinner(userChoice, computerChoice));
 };
 
-export default playGame;
 playGame();
+
+export default playGame;
