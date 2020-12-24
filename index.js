@@ -1,6 +1,6 @@
 export const getUserChoice = (userInput) => {
   let cleanInput = userInput.trim().toLowerCase();
-  if (input === "rock") {
+  if (cleanInput === "rock") {
     return cleanInput;
   } else if (cleanInput === "paper") {
     return cleanInput;
