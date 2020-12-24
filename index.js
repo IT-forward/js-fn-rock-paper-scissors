@@ -1,13 +1,13 @@
 export const getUserChoice = (userInput) => {
-  let input = userInput.trim().toLowerCase();
+  let cleanInput = userInput.trim().toLowerCase();
   if (input === "rock") {
-    return input;
-  } else if (input === "paper") {
-    return input;
-  } else if (input === "scissors") {
-    return input;
-  } else if (input === 'bomb'){
-    return input;
+    return cleanInput;
+  } else if (cleanInput === "paper") {
+    return cleanInput;
+  } else if (cleanInput === "scissors") {
+    return cleanInput;
+  } else if (cleanInput === 'bomb'){
+    return cleanInput;
   } else {
     console.log("Incorrect choice")
   }
@@ -15,9 +15,9 @@ export const getUserChoice = (userInput) => {
 };
 
 export const getComputerChoice = () => {
-  let input2 = Math.floor(Math.random() * 3);
-  let randomChoice = ["rock", "paper", "scissors"];
-  return randomChoice[input2];
+  let randomIndex = Math.floor(Math.random() * 3);
+  let choices = ["rock", "paper", "scissors"];
+  return choices[randomIndex];
 };
 
 export const determineWinner = (userChoice, computerChoice) => {
