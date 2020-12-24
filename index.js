@@ -39,7 +39,8 @@ export const determineWinner = (userChoice, computerChoice) => {
 const playGame = () => {
   let userChoice = getUserChoice('paper');
   let computerChoice = getComputerChoice();
-  console.log(userChoice, computerChoice);
+  console.log('user chose: ' + userChoice);
+  console.log('computer chose: ' + userChoice);
   console.log(determineWinner(userChoice, computerChoice));
 };
 
