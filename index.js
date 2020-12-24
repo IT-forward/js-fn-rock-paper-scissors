@@ -1,13 +1,13 @@
 export const getUserChoice = (userInput) => {
-  let input = userInput.trim().toLowerCase();
-  if (input === 'rock') {
-    return input;
-  } else if (input === 'scissors') {
-    return input;
-  } else if (input === 'paper') {
-    return input;
-  } else if (input === 'bomb') {
-    return input;
+  let cleanInput = userInput.trim().toLowerCase();
+  if (cleanInput === 'rock') {
+    return cleanInput;
+  } else if (cleanInput === 'scissors') {
+    return cleanInput;
+  } else if (cleanInput === 'paper') {
+    return cleanInput;
+  } else if (cleanInput === 'bomb') {
+    return cleanInput;
   } else {
     console.log('ERROR MESSAGE');
   }
@@ -38,7 +38,8 @@ export const determineWinner = (userChoice, computerChoice) => {
 const playGame = () => {
   let userChoice = getUserChoice('paper');
   let computerChoice = getComputerChoice();
-  console.log(userChoice, computerChoice);
+  console.log('User chose: ' + userChoice);
+  console.log('Computer chose: ' + computerChoice);
   console.log(determineWinner(userChoice, computerChoice));
 };
 export default playGame;
